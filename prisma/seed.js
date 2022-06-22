@@ -44,6 +44,8 @@ const prisma = new PrismaClient();
     });
 
     const explorer1 = await prisma.mission.upsert({
+      where: {name: 'Explorer 1'},
+      update: {},
       create: {
         name: 'Explorer1',
         username: 'ajolonauta1',
@@ -55,6 +57,8 @@ const prisma = new PrismaClient();
     });
 
     const explorer2 = await prisma.mission.upsert({
+      where: {name: 'Explorer 2'},
+      update: {},
       create: {
         name: 'Explorer2',
         username: 'ajolonauta2',
@@ -66,6 +70,8 @@ const prisma = new PrismaClient();
     });
 
     const explorer3 = await prisma.mission.upsert({
+      where: {name: 'Explorer 3'},
+      update: {},
       create: {
         name: 'Explorer3',
         username: 'ajolonauta3',
